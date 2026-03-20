@@ -1,0 +1,30 @@
+{
+  "VirtualSwitches": [
+    {
+      "Name": "Demo-Private-Switch",
+      "State": "Present",
+      "SwitchType": "Private"
+    }
+  ],
+  "VirtualHardDisks": [
+    {
+      "Path": "D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx",
+      "State": "Present",
+      "SizeBytes": 21474836480
+    }
+  ],
+  "VirtualMachines": [
+    {
+      "Name": "Demo-DB-01",
+      "State": "Present",
+      "CPUCount": 2,
+      "MemoryMB": 4096,
+      "SwitchName": "Demo-Private-Switch",
+      "VHDPath": "D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx"
+    },
+    {
+      "Name": "Old-Test-Server",
+      "State": "Absent"
+    }
+  ]
+}

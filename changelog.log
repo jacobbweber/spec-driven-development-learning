@@ -1,0 +1,24 @@
+Changelog - Spec-Driven Development (SDD)
+
+The following changes trace the evolution of the application since the initial MVP, starting with the enterprise policy additions to the project constitution.
+
+==================================================
+Phase 6: Enterprise Upgrades (Phase 2)
+==================================================
+
+- Constitution Update: Formally added rules demanding `$ErrorActionPreference = 'Stop'`, replaced backtick continuations with rigorous splatting, and mandated complete Pester test coverage within `docs\spec\constitution.md`.
+- Requirements Update: Introduced rigorous non-functional requirements to `requirements.md` including robust 3-stream logging architecture (Aggregator JSON, Developer diagnostic, and Terminal console) and automated log rotation policies (30 days or 1GB max).
+- Specification Drafted: Designed an explicit `docs\spec\logging_spec.md` with rotation algorithms and path logic.
+- Module Creation: The AI generated the `Logging` module strictly adhering to the newly created logging specification.
+- Architecture Refactoring: Replaced `Write-Host` globally with `Write-Log` over the Controller and Lifecycle library. Implemented fail-fast error handling and comprehensive refactoring to achieve 100% checks in `Invoke-ScriptAnalyzer`.
+- Testing: Automated Pester tests correctly generated based off of the project logic.
+
+==================================================
+Phase 7: Scaling the Architecture (Phase 3)
+==================================================
+
+- Specification Decomposition: The monolithic `vm_lifecycle_spec.md` was removed and systematically decoupled into three independent domain specifications: `hyperv_compute_spec.md`, `hyperv_network_spec.md`, and `hyperv_storage_spec.md`.
+- Payload Evolution: Enhanced `state.json` payload architecture to accept three distinct JSON arrays representing multi-domain declarative resources.
+- Module Re-architecture: Completely replaced the `VMLifecycle` monolithic module with three new isolated modules: `HyperV.Compute`, `HyperV.Network`, and `HyperV.Storage`, respectively implementing the distinct storage, network, and compute declarative parameters.
+- Controller Replacement: Upgraded the initial Controller to `Invoke-HyperVSync.ps1` orchestrating the deployment order and executing dependencies appropriately between network, storage, and compute configurations.
+- Test Generation: Generated automated overarching integration tests ensuring the new decoupled configuration runs stably and concurrently across endpoints.
