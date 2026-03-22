@@ -107,13 +107,4 @@ SDD stops "vibe coding" (guessing and checking). By using a **Constitution** for
 * **Living Documentation:** Specs live in the repo and evolve with every PR, ensuring docs are never "stale."
 * **Cross-Platform Parity:** Use one `spec.md` to drive implementation across Web, iOS, and Android for identical logic.
 
-# Team Adoption Plan
-* **Knowledge Sharing:**
-    * Create a central Confluence/Wiki page for SDD workflows.
-    * Conduct **"Spec Review"** sessions instead of traditional "Code Reviews."
-* **Standardized Tooling:**
-    * Deploy **GitHub Spec-Kit** for new feature development.
-    * Use **VS Code/Copilot** or **Cursor** for rapid prototyping within SDD constraints.
-* **Consistency:**
-    * **Master Templates:** Standardize `python-constitution.md`, `powershell-constitution.md`, etc.
-    * **Feature Blueprints:** Use reusable `spec-template.md` files to ensure SDLC components (FR/NFR) are never missed.
+
