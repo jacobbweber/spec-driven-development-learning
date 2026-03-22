@@ -5,8 +5,6 @@
     Implements Docs\Spec\hyperv_compute_spec.md
 #>
 
-$loggingModulePath = Join-Path $PSScriptRoot "..\Logging\Logging.psm1"
-if (Test-Path $loggingModulePath) { Import-Module $loggingModulePath -Force }
 
 $publicDir = Join-Path $PSScriptRoot "Public"
 if (Test-Path $publicDir) {

@@ -1,0 +1,168 @@
+[2026-03-22 13:10:29.623] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:10:29.624] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:10:29.645] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:10:29.665] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:10:29.688] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:15:11.005] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:15:11.008] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:15:11.011] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:15:11.014] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:15:11.018] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:16:55.777] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:16:55.778] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:16:55.785] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:16:55.789] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:16:55.795] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:17:06.731] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:17:06.732] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:17:06.733] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (DesiredState=Present, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:17:06.895] [INFO] [Assert-NetworkState] Switch 'Demo-Private-Switch' does not exist. Creating. | Context: (DesiredState=Present, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:17:07.280] [INFO] [Assert-NetworkState] CREATED: Virtual Switch 'Demo-Private-Switch' of type Private. | Context: (DesiredState=Present, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:17:07.281] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:17:07.283] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=Present)
+[2026-03-22 13:17:07.313] [INFO] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' does not exist. Creating. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=Present)
+[2026-03-22 13:17:08.353] [INFO] [Assert-StorageState] CREATED: Virtual Hard Disk 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' (21474836480 Bytes). | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=Present)
+[2026-03-22 13:17:08.354] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:17:08.356] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=Present)
+[2026-03-22 13:17:08.373] [INFO] [Assert-ComputeState] VM 'Demo-DB-01' does not exist. Creating. | Context: (VMName=Demo-DB-01, DesiredState=Present)
+[2026-03-22 13:17:10.196] [INFO] [Assert-ComputeState] Attaching VM to Switch: Demo-Private-Switch | Context: (VMName=Demo-DB-01, DesiredState=Present)
+[2026-03-22 13:17:10.247] [INFO] [Assert-ComputeState] Attaching VHD to VM: D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VMName=Demo-DB-01, DesiredState=Present)
+[2026-03-22 13:17:10.421] [INFO] [Assert-ComputeState] CREATED: Virtual Machine 'Demo-DB-01'. | Context: (VMName=Demo-DB-01, DesiredState=Present)
+[2026-03-22 13:17:10.424] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=Absent)
+[2026-03-22 13:17:10.430] [DEBUG] [Assert-ComputeState] VM 'Old-Test-Server' is already Absent. Skipping. | Context: (VMName=Old-Test-Server, DesiredState=Absent)
+[2026-03-22 13:17:10.432] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:23:47.775] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:23:47.775] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:23:47.776] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (DesiredState=absent, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:23:47.863] [INFO] [Assert-NetworkState] Switch 'Demo-Private-Switch' exists but desired state is Absent. Removing. | Context: (DesiredState=absent, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:23:47.959] [INFO] [Assert-NetworkState] DELETED: Virtual Switch 'Demo-Private-Switch'. | Context: (DesiredState=absent, SwitchName=Demo-Private-Switch)
+[2026-03-22 13:23:47.959] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:23:47.960] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 13:23:48.000] [INFO] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' exists but desired state is Absent. Removing. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 13:23:48.002] [INFO] [Assert-StorageState] DELETED: Virtual Hard Disk 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx'. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 13:23:48.003] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:23:48.003] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 13:23:48.022] [INFO] [Assert-ComputeState] VM 'Demo-DB-01' exists but desired state is Absent. Removing. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 13:23:48.073] [INFO] [Assert-ComputeState] DELETED: Virtual Machine 'Demo-DB-01'. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 13:23:48.074] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 13:23:48.081] [INFO] [Assert-ComputeState] VM 'Old-Test-Server' does not exist. Creating. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 13:23:48.581] [INFO] [Assert-ComputeState] CREATED: Virtual Machine 'Old-Test-Server'. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 13:23:48.583] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:27:10.906] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:27:10.910] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:30:47.380] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:30:47.381] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:30:57.600] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:30:57.601] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:31:05.330] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:31:05.331] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:31:42.750] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:31:42.750] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:32:17.329] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:32:17.330] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:32:59.828] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:32:59.828] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:32:59.848] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:32:59.866] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:32:59.889] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:33:56.096] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:33:56.097] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:33:56.098] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 13:33:56.307] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 13:33:56.307] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:33:56.310] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 13:33:56.334] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 13:33:56.335] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:33:56.337] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 13:33:56.359] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 13:33:56.360] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 13:33:56.480] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 13:33:56.481] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 13:34:11.560] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 13:34:11.561] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 13:34:11.563] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 13:34:11.565] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 13:34:11.567] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 15:14:28.923] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 15:14:28.926] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 15:14:57.626] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 15:14:57.640] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 15:14:57.645] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 15:14:57.900] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 15:14:57.901] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 15:14:57.906] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (DesiredState=absent, VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx)
+[2026-03-22 15:14:57.929] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (DesiredState=absent, VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx)
+[2026-03-22 15:14:57.931] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 15:14:57.939] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 15:14:57.957] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 15:14:57.959] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 15:14:58.058] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 15:14:58.063] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 15:35:41.811] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 15:35:41.811] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 15:36:24.820] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 15:36:24.820] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 15:36:24.821] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 15:36:24.830] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 15:36:24.830] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 15:36:24.831] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 15:36:24.849] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 15:36:24.849] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 15:36:24.850] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 15:36:24.857] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 15:36:24.858] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 15:36:24.918] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 15:36:24.919] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 15:36:57.423] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 15:36:57.424] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 15:36:57.425] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 15:36:57.426] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 15:36:57.428] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 16:04:02.100] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:04:02.101] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:05:12.348] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:05:12.349] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:06:33.935] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:06:33.935] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:06:33.936] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 16:06:33.937] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 16:06:33.939] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 16:06:47.667] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:06:47.668] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:06:47.668] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 16:06:47.677] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 16:06:47.677] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 16:06:47.678] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 16:06:47.694] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 16:06:47.694] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 16:06:47.695] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:06:47.702] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:06:47.703] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:06:47.764] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:06:47.765] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 16:10:25.020] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:10:25.021] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:10:25.024] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (DesiredState=absent, SwitchName=Demo-Private-Switch)
+[2026-03-22 16:10:25.032] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (DesiredState=absent, SwitchName=Demo-Private-Switch)
+[2026-03-22 16:10:25.033] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 16:10:25.035] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 16:10:25.050] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx, DesiredState=absent)
+[2026-03-22 16:10:25.051] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 16:10:25.053] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:10:25.067] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:10:25.067] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:10:25.141] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:10:25.145] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed
+[2026-03-22 16:10:55.489] [INFO] [Invoke-HyperVSync] Starting Hyper-V Declarative Sync Process
+[2026-03-22 16:10:55.496] [INFO] [Invoke-HyperVSync] Orchestrating Network Domain
+[2026-03-22 16:10:55.501] [DEBUG] [Assert-NetworkState] Asserting Network State for Demo-Private-Switch | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 16:10:55.690] [DEBUG] [Assert-NetworkState] Switch 'Demo-Private-Switch' is already Absent. Skipping. | Context: (SwitchName=Demo-Private-Switch, DesiredState=absent)
+[2026-03-22 16:10:55.691] [INFO] [Invoke-HyperVSync] Orchestrating Storage Domain
+[2026-03-22 16:10:55.696] [DEBUG] [Assert-StorageState] Asserting Storage State for D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx | Context: (DesiredState=absent, VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx)
+[2026-03-22 16:10:55.706] [DEBUG] [Assert-StorageState] VHDX 'D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx' is already Absent. Skipping. | Context: (DesiredState=absent, VHDPath=D:\Tech\git\local_projects\SDD-Demo2\Example\Demo-DB-01.vhdx)
+[2026-03-22 16:10:55.708] [INFO] [Invoke-HyperVSync] Orchestrating Compute Domain
+[2026-03-22 16:10:55.715] [DEBUG] [Assert-ComputeState] Asserting Compute State for Demo-DB-01 | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:10:55.726] [DEBUG] [Assert-ComputeState] VM 'Demo-DB-01' is already Absent. Skipping. | Context: (VMName=Demo-DB-01, DesiredState=absent)
+[2026-03-22 16:10:55.729] [DEBUG] [Assert-ComputeState] Asserting Compute State for Old-Test-Server | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:10:55.809] [DEBUG] [Assert-ComputeState] SKIPPED: VM 'Old-Test-Server' is already in the desired state. | Context: (VMName=Old-Test-Server, DesiredState=present)
+[2026-03-22 16:10:55.815] [INFO] [Invoke-HyperVSync] Hyper-V Declarative Sync Completed

@@ -1,12 +1,16 @@
 # Project Constitution
 
 ## 1. Architectural Standards
-- **Controller-Library Architecture**:
-  - Scripts must be divided into a Controller (e.g., `Invoke-VMSync.ps1`) and one or more Library modules (`src\Modules\VMLifecycle`).
-  - Controllers orchestrate workflows, manage inputs, and handle outputs.
-  - Libraries contain the reusable, testable logic and do not rely on global controller variables.
-- **Module Structure**:
-  - Library modules must separate logic into `Public` (exported functions) and `Private` (internal helper functions) directories.
+- **Service-Oriented Module Architecture**:
+  - Scripts must transition from procedural parameter passing to using a single **Context Object** for state management.
+  - The Context Object must be the single source of truth for runtime flags (e.g., Audit vs. Remediate) and contain references to Provider classes.
+- **Provider-Based Abstraction**:
+  - Complex I/O logic (e.g., Logging, Telemetry, Reporting) must be encapsulated into specialized thread-safe Provider classes to insulate business logic from I/O mechanisms.
+- **Layered Function Hierarchy**:
+  - Code must be split into three tiers:
+    - *Atomic Functions (Private)*: Single-purpose low-level tools.
+    - *Workflow Functions (Public)*: High-level orchestrators taking a `$Context` object to manage a specific business task.
+    - *Controller Script*: Initializes Context and Providers, invokes Workflows, and manages final reporting/telemetry generation.
 
 ## 2. Software Design
 - **Single Responsibility**: Functions must be small and single-purpose. If a function requires the word "and" to describe what it does, it should likely be split up.

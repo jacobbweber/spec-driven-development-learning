@@ -1,0 +1,30 @@
+[
+  {
+    "VMName": "Old-Test-Server",
+    "Category": "Compute",
+    "Timestamp": "2026-03-22T13:23:48.5822851-04:00",
+    "Action": "Created",
+    "DesiredState": "present"
+  },
+  {
+    "VMName": "Demo-DB-01",
+    "Category": "Compute",
+    "Timestamp": "2026-03-22T13:23:48.0743136-04:00",
+    "Action": "Deleted",
+    "DesiredState": "absent"
+  },
+  {
+    "VHDPath": "D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx",
+    "DesiredState": "absent",
+    "Category": "Storage",
+    "Timestamp": "2026-03-22T13:23:48.0029408-04:00",
+    "Action": "Deleted"
+  },
+  {
+    "DesiredState": "absent",
+    "Category": "Network",
+    "Timestamp": "2026-03-22T13:23:47.9596917-04:00",
+    "SwitchName": "Demo-Private-Switch",
+    "Action": "Deleted"
+  }
+]

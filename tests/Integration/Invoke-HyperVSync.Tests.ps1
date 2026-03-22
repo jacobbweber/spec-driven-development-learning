@@ -1,12 +1,15 @@
 Describe 'Invoke-HyperVSync Integration Tests' {
     BeforeAll {
+        . "$PSScriptRoot\..\..\src\Classes\Logger.ps1"
+        . "$PSScriptRoot\..\..\src\Classes\Telemetry.ps1"
+        . "$PSScriptRoot\..\..\src\Classes\Context.ps1"
+        
         $script:controllerPath = Join-Path $PSScriptRoot "..\..\src\Invoke-HyperVSync.ps1"
         $script:stateFile = Join-Path $PSScriptRoot "..\..\Example\state.json"
         
         Import-Module (Join-Path $PSScriptRoot "..\..\src\Modules\HyperV.Network\HyperV.Network.psm1") -Force
         Import-Module (Join-Path $PSScriptRoot "..\..\src\Modules\HyperV.Storage\HyperV.Storage.psm1") -Force
         Import-Module (Join-Path $PSScriptRoot "..\..\src\Modules\HyperV.Compute\HyperV.Compute.psm1") -Force
-        Import-Module (Join-Path $PSScriptRoot "..\..\src\Modules\Logging\Logging.psm1") -Force
     }
 
     Context 'Parameter Validation and Error Handling' {
@@ -17,11 +20,9 @@ Describe 'Invoke-HyperVSync Integration Tests' {
 
     Context 'Execution orchestration' {
         It 'Calls Domain Asserts for components defined in the JSON' {
-            Mock Import-Module {}
             Mock Assert-NetworkState {}
             Mock Assert-StorageState {}
             Mock Assert-ComputeState {}
-            Mock Write-Log {}
 
             & $script:controllerPath -StateFilePath $script:stateFile
 

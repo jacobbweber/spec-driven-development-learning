@@ -1,0 +1,111 @@
+{"Timestamp":"2026-03-22T13:10:29.6230698-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:10:29.6246672-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:10:29.6451881-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:10:29.6653792-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:10:29.6887395-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:15:11.0055774-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:15:11.0081969-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:15:11.0116759-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:15:11.0143273-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:15:11.0186749-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:16:55.7774278-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:16:55.7788581-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:16:55.7852391-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:16:55.7899757-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:16:55.7959146-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:17:06.7315543-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:17:06.7323807-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:17:06.8950134-04:00","Level":"INFO","Origin":"Assert-NetworkState","Message":"Switch 'Demo-Private-Switch' does not exist. Creating.","Context":{"DesiredState":"Present","SwitchName":"Demo-Private-Switch"}}
+{"Timestamp":"2026-03-22T13:17:07.2806699-04:00","Level":"INFO","Origin":"Assert-NetworkState","Message":"CREATED: Virtual Switch 'Demo-Private-Switch' of type Private.","Context":{"DesiredState":"Present","SwitchName":"Demo-Private-Switch"}}
+{"Timestamp":"2026-03-22T13:17:07.2815680-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:17:07.3134289-04:00","Level":"INFO","Origin":"Assert-StorageState","Message":"VHDX 'D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx' does not exist. Creating.","Context":{"VHDPath":"D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:08.3535986-04:00","Level":"INFO","Origin":"Assert-StorageState","Message":"CREATED: Virtual Hard Disk 'D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx' (21474836480 Bytes).","Context":{"VHDPath":"D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:08.3544271-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:17:08.3732136-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"VM 'Demo-DB-01' does not exist. Creating.","Context":{"VMName":"Demo-DB-01","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:10.1965962-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"Attaching VM to Switch: Demo-Private-Switch","Context":{"VMName":"Demo-DB-01","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:10.2474093-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"Attaching VHD to VM: D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx","Context":{"VMName":"Demo-DB-01","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:10.4219222-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"CREATED: Virtual Machine 'Demo-DB-01'.","Context":{"VMName":"Demo-DB-01","DesiredState":"Present"}}
+{"Timestamp":"2026-03-22T13:17:10.4327030-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:23:47.7751186-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:23:47.7758077-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:23:47.8636672-04:00","Level":"INFO","Origin":"Assert-NetworkState","Message":"Switch 'Demo-Private-Switch' exists but desired state is Absent. Removing.","Context":{"DesiredState":"absent","SwitchName":"Demo-Private-Switch"}}
+{"Timestamp":"2026-03-22T13:23:47.9590772-04:00","Level":"INFO","Origin":"Assert-NetworkState","Message":"DELETED: Virtual Switch 'Demo-Private-Switch'.","Context":{"DesiredState":"absent","SwitchName":"Demo-Private-Switch"}}
+{"Timestamp":"2026-03-22T13:23:47.9597892-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:23:48.0009906-04:00","Level":"INFO","Origin":"Assert-StorageState","Message":"VHDX 'D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx' exists but desired state is Absent. Removing.","Context":{"VHDPath":"D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx","DesiredState":"absent"}}
+{"Timestamp":"2026-03-22T13:23:48.0023455-04:00","Level":"INFO","Origin":"Assert-StorageState","Message":"DELETED: Virtual Hard Disk 'D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx'.","Context":{"VHDPath":"D:\\Tech\\git\\local_projects\\SDD-Demo2\\Example\\Demo-DB-01.vhdx","DesiredState":"absent"}}
+{"Timestamp":"2026-03-22T13:23:48.0030939-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:23:48.0223217-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"VM 'Demo-DB-01' exists but desired state is Absent. Removing.","Context":{"VMName":"Demo-DB-01","DesiredState":"absent"}}
+{"Timestamp":"2026-03-22T13:23:48.0735679-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"DELETED: Virtual Machine 'Demo-DB-01'.","Context":{"VMName":"Demo-DB-01","DesiredState":"absent"}}
+{"Timestamp":"2026-03-22T13:23:48.0817721-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"VM 'Old-Test-Server' does not exist. Creating.","Context":{"VMName":"Old-Test-Server","DesiredState":"present"}}
+{"Timestamp":"2026-03-22T13:23:48.5815473-04:00","Level":"INFO","Origin":"Assert-ComputeState","Message":"CREATED: Virtual Machine 'Old-Test-Server'.","Context":{"VMName":"Old-Test-Server","DesiredState":"present"}}
+{"Timestamp":"2026-03-22T13:23:48.5835545-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:27:10.9062654-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:27:10.9106394-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:30:47.3802044-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:30:47.3811224-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:30:57.6006102-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:30:57.6013122-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:31:05.3305765-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:31:05.3312547-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:31:42.7503283-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:31:42.7509923-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:32:17.3295037-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:32:17.3303025-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:32:59.8282471-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:32:59.8289649-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:32:59.8486585-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:32:59.8662663-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:32:59.8891059-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:33:56.0965807-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:33:56.0973430-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:33:56.3079080-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:33:56.3351805-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:33:56.4818065-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T13:34:11.5606065-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T13:34:11.5612496-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T13:34:11.5635358-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T13:34:11.5651322-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T13:34:11.5672845-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T15:14:28.9235954-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T15:14:28.9267480-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T15:14:57.6269870-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T15:14:57.6402947-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T15:14:57.9015448-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T15:14:57.9310403-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T15:14:58.0635604-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T15:35:41.8111781-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T15:35:41.8117960-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T15:36:24.8201156-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T15:36:24.8207249-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T15:36:24.8306172-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T15:36:24.8498277-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T15:36:24.9196998-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T15:36:57.4235788-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T15:36:57.4241314-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T15:36:57.4253542-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T15:36:57.4264279-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T15:36:57.4281482-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T16:04:02.1004215-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:04:02.1010918-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:05:12.3482569-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:05:12.3490027-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:06:33.9350352-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:06:33.9356018-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:06:33.9367309-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T16:06:33.9376050-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T16:06:33.9392116-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T16:06:47.6675625-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:06:47.6681841-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:06:47.6779834-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T16:06:47.6948788-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T16:06:47.7653297-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T16:10:25.0207508-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:10:25.0214649-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:10:25.0332214-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T16:10:25.0511549-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T16:10:25.1453620-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}
+{"Timestamp":"2026-03-22T16:10:55.4895727-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Starting Hyper-V Declarative Sync Process"}
+{"Timestamp":"2026-03-22T16:10:55.4967536-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Network Domain"}
+{"Timestamp":"2026-03-22T16:10:55.6913043-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Storage Domain"}
+{"Timestamp":"2026-03-22T16:10:55.7083353-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Orchestrating Compute Domain"}
+{"Timestamp":"2026-03-22T16:10:55.8150649-04:00","Level":"INFO","Origin":"Invoke-HyperVSync","Message":"Hyper-V Declarative Sync Completed"}

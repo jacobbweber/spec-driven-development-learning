@@ -1,1 +1,0 @@
-[2026-03-16 20:00:56.800] [DEBUG] [Logging.Tests.ps1] Test Debug
