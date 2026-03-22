@@ -105,6 +105,3 @@ SDD stops "vibe coding" (guessing and checking). By using a **Constitution** for
 
 # Evolution & Maintenance
 * **Living Documentation:** Specs live in the repo and evolve with every PR, ensuring docs are never "stale."
-* **Cross-Platform Parity:** Use one `spec.md` to drive implementation across Web, iOS, and Android for identical logic.
-
-
