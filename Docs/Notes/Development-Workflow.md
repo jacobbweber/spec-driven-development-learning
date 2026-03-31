@@ -17,7 +17,7 @@
 ### 2a. Types of Integration Testing
 * **Mocked Integration (Simulation)**:
     * **Method**: You run the entire script but mock the API/Connection layer. 
-    * **Goal**: To validate the **Business Logic**. You pass in a complex "Mock Object" representing a messy Zerto environment and assert that the script's internal logic correctly identifies which VMs are overrides. This is your "Simulation" mode.
+    * **Goal**: To validate the **Business Logic**. You pass in a complex "Mock Object" representing a messy environment and assert that the script's internal logic correctly identifies which VMs are overrides. This is your "Simulation" mode.
 * **Live Integration (Environment Validation)**:
     * **Method**: Run the script against a non-production "Sandbox" or "Dev" environment.
     * **Goal**: To validate **Connectivity and Permissions**. It ensures the service account has the right RBAC roles and the API endpoints are reachable.
